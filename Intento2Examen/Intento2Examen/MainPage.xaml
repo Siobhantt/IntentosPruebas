@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Intento2Examen.MainPage">
+
+    <AbsoluteLayout HorizontalOptions="Center">
+        <Image 
+            AbsoluteLayout.LayoutBounds="0,0,300,300"
+            Source="imagen1.jpg" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+        Tapped="TapGestureRecognizer_Tapped"
+        NumberOfTapsRequired="1">
+                </TapGestureRecognizer>
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image
+            AbsoluteLayout.LayoutBounds="320,0,300,300"
+            Source="imagen2.jpg">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                    Tapped="TapGestureRecognizer_Tapped"
+                    NumberOfTapsRequired="1">
+                </TapGestureRecognizer>
+            </Image.GestureRecognizers>
+        
+        </Image>
+        <!-- BOTONES IMAGEN IZQUIERDA-->
+        <Button 
+            
+            Opacity="0"
+            x:Name="btaciertoCasa" 
+            AbsoluteLayout.LayoutBounds="10,100"
+                CornerRadius="50"
+                BorderColor="Red"
+                BackgroundColor="Transparent"
+             Clicked="acierto_Clicked"
+            />
+        
+        <Button
+            Opacity="0"
+            x:Name="btaciertoEspalda" 
+            AbsoluteLayout.LayoutBounds="200,100"
+        CornerRadius="50"
+        BorderColor="Red"
+        BackgroundColor="Transparent"
+         Clicked="acierto_Clicked"
+    />
+        
+        <Button 
+            Opacity="0"
+            x:Name="btaciertoHueso" 
+            AbsoluteLayout.LayoutBounds="100,240"
+        CornerRadius="50"
+        BorderColor="Red"
+        BackgroundColor="Transparent"
+          Clicked="acierto_Clicked"
+    />
+
+        <!-- BOTONES IMAGEN DERECHA-->
+        <!-- En este caso a la hora de bindear un objeto(Aunque no me salga en la pagina tengo que intentarlo ok)
+        Establezco la propiedad de binding context, establezco la referencia que es el objeto con el que quiero bindear mi objeto
+        Luego en la propiedad que en este caso es opacity, la igualo al binding, el path es lo que quiero modificar y
+        como en este caso quiero que ocurra en los dos objetos le pongo el modo two way
+        -->
+        <Button 
+        BindingContext="{x:Reference btaciertoCasa}"
+        Opacity="{Binding Path= Opacity, Mode=TwoWay}"
+        x:Name="btaciertoCasa2" 
+        AbsoluteLayout.LayoutBounds="330,100"
+            CornerRadius="50"
+            BorderColor="Red"
+            BackgroundColor="Transparent"
+         Clicked="acierto_Clicked"
+         
+        />
+        <Button
+            BindingContext="{x:Reference btaciertoEspalda}"
+        Opacity="{Binding Path=Opacity, Mode=TwoWay}"
+        x:Name="btaciertoEspalda2" 
+        AbsoluteLayout.LayoutBounds="520,100"
+    CornerRadius="50"
+    BorderColor="Red"
+    BackgroundColor="Transparent"
+     Clicked="acierto_Clicked"
+/>
+
+        <Button 
+            BindingContext="{x:Reference btaciertoHueso}"
+        Opacity="{Binding Path=Opacity, Mode=TwoWay}"
+        x:Name="btaciertoHueso2" 
+        AbsoluteLayout.LayoutBounds="430,240"
+    CornerRadius="50"
+    BorderColor="Red"
+    BackgroundColor="Transparent"
+      Clicked="acierto_Clicked"
+/>
+
+        <Label 
+                AbsoluteLayout.LayoutBounds="100,400"
+                VerticalOptions="End"
+                x:Name="tvacierto"
+                Text="Aciertos:"></Label>
+        <Label 
+     AbsoluteLayout.LayoutBounds="100,450"
+     VerticalOptions="End"
+     x:Name="tvfallo"
+     Text="Fallo:"></Label>
+
+    </AbsoluteLayout>
+
+</ContentPage>
