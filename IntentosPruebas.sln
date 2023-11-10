@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntentosPruebas", "Intentos
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntentoNavegacion", "IntentoNavegacion\IntentoNavegacion.csproj", "{F6E9ABBF-749A-40BE-8837-A072D209F8B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntentoListView", "IntentoListView\IntentoListView.csproj", "{D556759E-6FE2-4E0E-8FB8-7BB9C4E2E20A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntentoListView", "IntentoListView\IntentoListView.csproj", "{D556759E-6FE2-4E0E-8FB8-7BB9C4E2E20A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntentoBinding", "IntentoBinding\IntentoBinding.csproj", "{3C64B520-7FC3-4520-912B-06B780FC75FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,12 @@ Global
 		{D556759E-6FE2-4E0E-8FB8-7BB9C4E2E20A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D556759E-6FE2-4E0E-8FB8-7BB9C4E2E20A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D556759E-6FE2-4E0E-8FB8-7BB9C4E2E20A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3C64B520-7FC3-4520-912B-06B780FC75FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C64B520-7FC3-4520-912B-06B780FC75FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C64B520-7FC3-4520-912B-06B780FC75FE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3C64B520-7FC3-4520-912B-06B780FC75FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C64B520-7FC3-4520-912B-06B780FC75FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C64B520-7FC3-4520-912B-06B780FC75FE}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
