@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="U6Ej1.MainPage">
+
+    <VerticalStackLayout x:Name="layout">
+        <Button x:Name="bt1"
+                Text="Boton1" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                BackgroundColor="Blue"
+                WidthRequest="200"
+                HeightRequest="70"
+                FontFamily="Verdana"
+                FontAttributes="Bold"
+                FontSize="16"
+                BorderColor="Yellow"
+                BorderWidth="3"></Button>
+        
+        <Button x:Name="bt2"
+                Text="Boton2" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                BackgroundColor="Blue"
+                WidthRequest="200"
+                HeightRequest="70"
+                FontFamily="Verdana"
+                FontAttributes="Bold"
+                FontSize="16"
+                BorderColor="Yellow"
+                BorderWidth="3"
+                Clicked="Button_Clicked"></Button>
+
+        
+        
+    </VerticalStackLayout>
+
+</ContentPage>
